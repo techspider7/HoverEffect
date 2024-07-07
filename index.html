@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <title>HOVER EFFECT</title>
+  </head>
+  <body>
+    <div
+      class="bg-cover bg-center h-screen w-screen"
+      style="
+        background-image: url('bg.jpg');"
+    >
+      <div class="h-screen flex justify-center items-center">
+        <button
+          class="border border-red-500 
+          p-4 border-x-4 border-y-4 
+          rounded-lg bg-black text-red-500 
+          font-bold hover:bg-red-500 
+          hover:border-black
+          hover:border-x-8 hover:border-y-8 
+          hover:bg-[url('btnbg.jpg')]
+          hover:bg-center hover:bg-no-repeat
+          hover:bg-cover hover:text-transparent"
+        >
+          HOVER ME
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
